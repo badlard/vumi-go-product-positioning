@@ -100,13 +100,107 @@ textarea {
 body {
   font-family: "museo-sans",Helvetica,"Helvetica Neue",Arial,sans-serif;
   background-color: #d6d6d6;
-  padding: 1em;
+  margin: 0;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 40em;
+  padding: 2em;
+  background-color: #fff;
 }
 
 img {
   width: 100%;
   height: auto;
 }
+
+.dimensions {
+  margin: 3em 0 0 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.dimensions li {
+  padding: 3em 0;
+  border-top: solid 0.2em #d6d6d6;
+}
+
+progress[value] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 1em;
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color: #e6e6e6;
+}
+
+progress[value]::-moz-progress-bar {
+  background-color: #e6e6e6;
+}
+
+progress[value]::progress-bar {
+  background-color: #e6e6e6;
+}
+
+progress[value]::-webkit-progress-value {
+  background-color: #666;
+}
+
+progress[value]::-moz-progress-value {
+  background-color: #666;
+}
+
+progress[value]::progress-value {
+  background-color: #666;
+}
+
+
+.l-fll {
+  float: left;
+}
+
+.l-flr {
+  float: right;
+}
+
+.dimensions-desc {
+  padding: 0 0.5em 1em 0;
+  font-size: 1.5em;
+  color: #d22b2b;
+  margin: 0;
+} 
+
+.dimensions-quote {
+  background-color: #d22b2b;
+  color: white;
+  font-size: 1.5em;
+  margin: 0;
+  padding: 1em 2em;
+  position: relative;
+}
+
+.dimensions-quote:before,
+.dimensions-quote:after {
+  font-size: 3em;
+  position: absolute;
+  opacity: 0.5;
+}
+
+
+.dimensions-quote:before {
+    content: '\201C';
+    top: 0;
+    left: 0.15em;
+  }
+
+.dimensions-quote:after {
+    content: '\201D';
+    bottom: -0.5em;
+    right: 0.25em;
+  }
 
 
 /* http://timkadlec.com/2012/10/ie10-snap-mode-and-responsive-design/*/
